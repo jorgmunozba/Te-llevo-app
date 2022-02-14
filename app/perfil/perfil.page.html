@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button id="home-button" slot="end" (click)="openFirst()">
+      <ion-icon id="icon-home" name="home-outline"></ion-icon>
+    </ion-button>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon id="icon-green" name="person-circle-outline"></ion-icon>
+          Perfil
+        </ion-item>
+        <ion-item>
+          <ion-icon  id="icon-green" name="document-text-outline"></ion-icon>
+          Historial
+        </ion-item>
+        <ion-item>
+          <ion-icon  id="icon-green" name="settings-outline"></ion-icon>
+          Configuración
+        </ion-item>
+        <ion-item [routerLink]="['/login']">
+          <ion-icon  id="icon-green" name="exit-outline"></ion-icon>
+          Salir
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-menu>
+
+
+
+
+<ion-content>
+
+  <br>
+  <div style="  margin:auto;
+  text-align: center;">
+    <ion-icon id="perfil-green" name="person-circle-outline"></ion-icon>
+  </div>
+
+  <div id="titulo" style="text-align: center;">
+    <ion-label>Tus datos</ion-label>
+  </div>
+  <br>
+
+  <div id="div1">
+    <p> <span>Nombre: </span> Jorge</p>
+    <p> <span>Apellido: </span>Muñoz</p>
+    <p> <span>Correo: </span>jorge.munoz@mail.com</p>
+    <p> <span>Usuario: </span>Jorge</p>
+    <p> <span>Patente: </span>DSDX20</p>
+  </div>
+
+</ion-content>

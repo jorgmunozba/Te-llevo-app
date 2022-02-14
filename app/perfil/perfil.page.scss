@@ -1,0 +1,146 @@
+ion-col{
+    text-align: center;
+}
+
+ion-toolbar{
+    background-color:yellowgreen;
+}
+
+ion-content{
+    --ion-background-color:#fff;
+}
+
+#home-button{
+    --border-color: none; --border-width: 0px !important;
+    --box-shadow:none;
+    --background:#0D177D;
+
+}
+
+#car-button{
+    --border-color: none; --border-width: 0px !important;
+    --box-shadow:none;
+}
+
+#icon-home{
+    color:white
+}
+
+#tellevo-img{
+
+    width: 57px; 
+    height: 42px; 
+    margin:auto; 
+    display: block;
+}
+
+#icon-car{
+    color:white
+    
+}
+
+#bienvenida-label{
+    font-size: 20px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+
+}
+
+#ubicacion-label{
+    font-size: 18px;
+}
+
+#mapa-img{
+    border-radius: 15px;
+}
+
+#bienvenida-div{
+
+    width:80% ;
+    height:40px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+#icon-green{
+    color:rgb(66, 186, 150);
+
+}
+
+#perfil-green{
+    color:rgb(66, 186, 150);
+    width: 150px;
+    height:150px;
+    
+}
+
+.square {
+    width: 80px;
+    height: 30px;
+    background: #fff;
+    margin: 10px;
+}
+
+#auto-button{
+    font-size: 10px;
+    width: 50x;
+    height: 10px;
+    --background:white;
+    color:black;
+}
+
+#titulo{
+
+    width:80% ;
+    height:40px;
+    background-color: rgb(255,204,0);
+    border-radius: 20px;
+    color:white;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+ion-toolbar{
+    --background: #0D177D;
+}
+
+ion-back-button{
+    color:white;
+}
+table{
+    margin-top:10px;
+}
+
+td, th {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+body {
+    padding: 10px;
+}
+
+span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#div1{
+    width: 90%;
+    height:220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding:10px;
+}

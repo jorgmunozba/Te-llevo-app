@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button id="home-button" slot="end" (click)="openFirst()">
+      <ion-icon id="icon-home" name="home-outline"></ion-icon>
+    </ion-button>
+
+
+    <ion-button id="car-button"slot="start">
+      <ion-icon id="icon-car" name="car-sport-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-content>
+      <ion-list>
+        <ion-item >
+          <ion-icon id="icon-green" name="person-circle-outline"></ion-icon>
+          <ion-button class="bttn-menu"  [routerLink]="['/perfil']">Perfil</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-icon  id="icon-green" name="document-text-outline"></ion-icon>
+          Historial
+        </ion-item>
+        <ion-item>
+          <ion-icon  id="icon-green" name="settings-outline"></ion-icon>
+          Configuración
+        </ion-item>
+        <ion-item>
+          <ion-icon id="icon-green" name="exit-outline"></ion-icon>
+          <ion-button class="bttn-menu"  [routerLink]="['/login']">Salir</ion-button>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-menu>
+
+
+
+
+  <ion-content>
+    <ion-grid>
+      <br>
+      <div id="bienvenida-div">
+        <ion-row>
+          <ion-col>
+            <ion-label id="bienvenida-label">Bienvenido</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-label id="ubicacion-label">Tu ubicación actual:</ion-label>
+        </ion-col>
+      </ion-row>
+      <br>
+      <div id="div1">
+        <ion-row>
+          <ion-col>
+
+            <img id="mapa-img"
+              src="https://www.google.com/maps/vt/data=1xyicShCY8CN2nyPnwTVCcljz_dpliMR1qGkBCREpPu4CHOIf3YpLH8xkqhqB6UugHeMFDnDCcGNVL8PIJW2wQDyHu1sooWN-qes3oJvJVFEPto8yaYlue6g-0TJ0wMa8KEQgXaobrrmU6mRXG62TxUNElTV6AlhkXK4wJvrx5POJJ_aE_LuUZOMlQwAerB4-TkBmteFNGmUn0J-3GFhClrjk4khvBiJ1Xdp4ch2E9C5QsQ">
+          </ion-col>
+        </ion-row>
+      </div>
+      <br>
+      <div>
+        <ion-row id="div2">
+          <ion-col>
+            <ion-button id="tellevo" style="height: 35px;" expand="full" [routerLink]="['/realizarviaje']" shape="round">Te
+              llevo</ion-button>
+            <ion-button id="mellevas" style="height: 35px;" expand="full" [routerLink]="['/solicitarviaje']" shape="round" color="warning">Me llevas</ion-button>
+            <ion-button expand="full" style="height: 35px;" color="light" shape="round">
+              <ion-icon name="star-outline"></ion-icon>
+              Escoger un lugar favorito
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div> 
+    </ion-grid>
+    <div class="square">  <img src="assets/img/auto-amarillo.jpg" style="width: 50px; height: 40px;"></div>
+  </ion-content>
+</ion-content>

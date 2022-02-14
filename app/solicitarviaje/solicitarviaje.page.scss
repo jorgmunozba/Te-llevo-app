@@ -1,0 +1,87 @@
+#tellevo-img{
+
+    width: 57px; 
+    height: 42px; 
+    margin-left: 55px;
+    margin-bottom: 4px;
+    display: block;
+    
+}
+
+#div1{
+    width: 90%;
+    height: 490px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+    background-size: contain;
+
+}
+#titulo-label{
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#div-bienvenida{
+    background-color: rgb(255,204,0);
+    width: 200px;
+    height: 33px;
+    margin: auto; 
+    text-align: center;
+    border-radius: 20px;
+}
+
+ion-label{
+    font-size: 14px;
+}
+
+#sub-div1{
+    background-color: white;
+    width: 98%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#sub-div2{
+    background-color: white;
+    width: 98%;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+
+ion-button{
+    height: 35px;
+}
+ion-input {
+
+    font-size: 14px;
+}
+#div-center{
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+ion-toolbar{
+    --background: #0D177D;
+}
+
+ion-back-button{
+    color:white;
+}
+
+ion-back-button{
+    color:white;
+    margin-left: 10px;
+    
+}

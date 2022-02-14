@@ -1,0 +1,62 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <body>
+
+    <div>
+      <br>
+    </div>
+    <ion-card>
+
+      <ion-card-header style="text-align: center;">
+        <ion-label class="ion-text-center">Ingresa tus datos</ion-label>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form>
+        <ion-item>
+          <ion-label style="font-size: 15px;">Nombre:</ion-label>
+          <ion-input class="ion-text-center"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label style="font-size: 15px;" class="ion-text-center">Apellido:</ion-label>
+          <ion-input class="ion-text-center"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label style="font-size: 15px;" class="ion-text-center">Correo:</ion-label>
+          <ion-input class="ion-text-center" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label style="font-size: 15px;" class="ion-text-center">Usuario:</ion-label>
+          <ion-input class="ion-text-center"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label style="font-size: 15px;" class="ion-text-center">Clave:</ion-label>
+          <ion-input type="password" class="ion-text-center"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label style="font-size: 15px;" class="ion-text-center">Patente:</ion-label>
+          <ion-input class="ion-text-center"></ion-input>
+        </ion-item>
+        <br>
+        <div>
+          <ion-button style="height:35px;">Registrar</ion-button>
+          <ion-button color="warning" style="height:35px;" type="reset">Limpiar</ion-button>
+        </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+  </body>
+</ion-content>

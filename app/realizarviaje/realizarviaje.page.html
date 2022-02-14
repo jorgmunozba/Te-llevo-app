@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-button id="home-button" slot="end">
+      <ion-icon id="icon-home" name="home-outline"></ion-icon>
+    </ion-button>
+
+
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="div1">
+  <ion-list lines="full">
+    <form [FormGroup]="crearViajes">
+      <ion-item>
+        <ion-label position="floating">Destino</ion-label>
+        <ion-input  type="text" required formControlName="destino"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Salida</ion-label>
+        <ion-input  type="text" required formControlName="salida">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha</ion-label>
+        <ion-input  required formControlName="fecha"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Hora</ion-label>
+        <ion-input  required formControlName="hora"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Precio</ion-label>
+        <ion-input  type="number" required formControlName="precio"></ion-input>
+      </ion-item>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block" (click)="next()">
+            Crear viaje
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+  </div>
+</ion-content>
